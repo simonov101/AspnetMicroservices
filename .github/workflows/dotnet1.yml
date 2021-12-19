@@ -21,8 +21,8 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
       
     - name: Restore NuGet packages
-      run: nuget restore Aspnetrun-microservices.sln
+      run: nuget restore AspnetMicroservices/src/Aspnetrun-microservices.sln
       
     - name: Build the solution
-      run: msBuild Aspnetrun-microservices.sln
+      run: msBuild AspnetMicroservices/src/Aspnetrun-microservices.sln
 
